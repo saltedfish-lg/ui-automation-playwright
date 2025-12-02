@@ -1,0 +1,28 @@
+env: "dev"
+
+app:
+  # 系统基础地址，不含具体业务路径
+  base_url: "http://vat.dev.dev.usaeu.com:8088"
+  # 登录页路径，相对 base_url
+  login_path: ""
+
+browser:
+  type: "chromium"
+  headless: false
+  slow_mo: 0
+
+# 统一管理各类等待时间，便于环境变慢时集中调优
+timeout:
+  short: 3000     # 短等待（毫秒），一般用于简单可见性判断
+  medium: 5000    # 中等待，作为大部分操作的默认超时
+  long: 10000     # 长等待，用于页面跳转、复杂操作
+
+# 默认账号建议留空，通过环境变量覆盖（LoginFlow 中已支持）
+account:
+  username: "guang"
+  password: "Aa123456"
+
+report:
+  screenshot_dir: "reports/screenshots"
+  log_dir: "reports/logs"
+  trace_dir: "reports/traces"

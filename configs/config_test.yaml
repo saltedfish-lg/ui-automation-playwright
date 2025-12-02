@@ -1,0 +1,5 @@
+app:
+  # 系统基础地址，不含具体业务路径
+  base_url: "http://testvat.usaeu.com:8089"
+  # 登录页路径，相对 base_url
+  login_path: ""
