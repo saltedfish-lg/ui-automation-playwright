@@ -19,10 +19,11 @@ timeout:
 
 # 默认账号建议留空，通过环境变量覆盖（LoginFlow 中已支持）
 account:
-  username: "guang"
-  password: "Aa123456"
+  username: ""
+  password: ""
 
 report:
   screenshot_dir: "reports/screenshots"
   log_dir: "reports/logs"
   trace_dir: "reports/traces"
+
