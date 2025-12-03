@@ -73,7 +73,7 @@
 env: "dev"
 
 app:
-  base_url: "http://vat.dev.dev.usaeu.com:8088"
+  base_url: "http://www.baidu.com"
   login_path: ""               # 如果登录页有 path，可以写成 "/login"
 
 browser:
@@ -87,8 +87,8 @@ timeout:
   long: 10000
 
 account:
-  username: "guang"
-  password: "Aa123456"
+  username: "xxx"
+  password: "xxx"
 
 report:
   screenshot_dir: "reports/screenshots"
@@ -101,7 +101,7 @@ report:
 ```yaml
 # configs/config_test.yaml
 app:
-  base_url: "http://testvat.usaeu.com:8089"
+  base_url: "http://xxxxxx"
   login_path: ""
 ```
 * 运行时通过 env 决定加载哪一个覆盖文件：
@@ -262,4 +262,5 @@ pytest
 * 按模块拆分更多 Page / Flow（订单、客户、报表等）
 * 把 utils/network_utils.py 的接口 mock 用在不稳定的第三方调用上
 * 补充一批基于 ApiClient 的接口用例，并和 UI 用例打通成“接口造数 + UI 校验”的链路
+
 * 引入用例标签（冒烟 / 回归 / 场景 / 跨域等），配合 Jenkins 做更灵活的测试策略
